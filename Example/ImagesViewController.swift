@@ -101,7 +101,7 @@ extension ImagesViewController : UICollectionViewDataSource {
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCell.ReuseIdentifier, for: indexPath) as! ImageCell
         let gravatar = gravatars[(indexPath as NSIndexPath).row]
-        cell.configureCellWithURLString(gravatar.url(size: sizeForCollectionViewItem().width).urlString, placeholderImage: placeholderImage)
+        cell.configureCellWithURLString(gravatar.url(sizeForCollectionViewItem().width).urlString, placeholderImage: placeholderImage)
 
         return cell
     }

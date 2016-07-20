@@ -49,7 +49,7 @@ class ImageViewController : UIViewController {
         imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
 
-        let URL = gravatar.url(size: view.bounds.size.width)
+        let URL = gravatar.url(view.bounds.size.width)
 
         imageView.af_setImageWithURL(
             URL,

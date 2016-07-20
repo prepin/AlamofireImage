@@ -98,7 +98,7 @@ public struct Gravatar {
         self.rating = rating
     }
 
-    public func url(size: CGFloat, scale: CGFloat = UIScreen.main().scale) -> Foundation.URL {
+    public func url(_ size: CGFloat, scale: CGFloat = UIScreen.main().scale) -> Foundation.URL {
         let url = try! Gravatar.baseURL.appendingPathComponent(email.md5_hash)
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
 
